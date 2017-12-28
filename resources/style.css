@@ -1,6 +1,112 @@
+html, p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
 
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.header,
+.courses {
+  background-color: #eee;
+}
+
+/* menu */
+.topbar .container {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.topbar .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .name {
+  color: grey;
+}
+
+.topbar span {
+  font-weight: 700;
+  color: #000;
+}
+
+.topbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.topbar li {
+  margin-left: 16px;
+}
+
+@media only screen and (min-width: 740px) {
+  .topbar .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .topbar .desktop,
+  .topbar .name {
+    display: none;
+  }
+  .topbar li {
+    margin-left: 32px;
+  }
+}
+
+/* footer */
+footer {
+  height: 40px;
+  font-size: 0.8rem;
+  border-top: 1px solid #eee;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 24px;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  margin-left: 16px;
+}
 
 /* fonts
 
