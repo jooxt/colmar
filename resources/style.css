@@ -139,6 +139,24 @@ h4 {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 740px) {
+  .header .container {
+    flex-direction: column;
+  }
+
+  .header .imagecontainer {
+    width: 100%;
+  }
+
+  .header .calltoaction {
+    max-width: 100%;
+  }
+
+  .calltoaction .button {
+    max-width: 100%;
+  }
+}
+
 /* information main */
 .information .container {
   display: flex;
@@ -201,6 +219,37 @@ h4 {
   color: #3399ff;
 }
 
+@media only screen and (min-width: 740px) {
+  .information .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .information .information-main,
+  .information .desktop {
+    display: none;
+  }
+
+  .option .info {
+    width: 100%;
+  }
+
+.option img {
+  width: 100%;
+}
+
+  .information-options .option {
+    flex-direction: column;
+  }
+
+
+  .information .information-options {
+    max-width: 100%;
+  }
+}
+
+
 /* courses */
 
 .courses .container {
@@ -222,7 +271,7 @@ h4 {
 }
 
 .coursesspecs .course {
-  max-width: 272px;
+  width: 272px;
   margin: 16px;
   background-color: white;
   border-bottom: 1px solid white;
@@ -246,6 +295,24 @@ h4 {
   margin: 10px 0;
 }
 
+@media only screen and (max-width: 740px) {
+  .courses {
+    background-color: white;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8
+  }
+
+  .coursesspecs .course {
+    width: 100%;
+    background-color: #e8e8e8;
+  }
+
+  .coursesspecs img, .coursesspecs p {
+    display: none;
+  }
+}
+
+
 /* Thesis */
 .thesis .container {
   display: flex;
@@ -262,11 +329,11 @@ h4 {
 }
 
 .thesiscontent .showcase {
-  max-width: 60%;
+  width: 60%;
 }
 
 .showcase video {
-  max-width: 96%;
+  width: 96%;
 }
 
 .showcase h4 {
@@ -276,6 +343,17 @@ h4 {
 .thesiscontent .information-options {
   max width: 40%;
 }
+
+@media only screen and (max-width: 740px) {
+  .thesiscontent h4, .thesiscontent p, .thesiscontent .information-options {
+    display: none;
+  }
+
+  .thesiscontent .showcase, .showcase video {
+    width: 100%
+  }
+}
+
 
 /* footer */
 footer {
