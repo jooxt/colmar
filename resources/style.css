@@ -2,7 +2,8 @@ html, p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.4;
+  color: #737373;
 }
 
 h1, h2, h3, h4 {
@@ -17,7 +18,7 @@ h1 {
 
 h2 {
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -37,7 +38,7 @@ h4 {
 
 .header,
 .courses {
-  background-color: #d8d8d8;
+  background-color: #e8e8e8;
 }
 
 /* menu */
@@ -175,7 +176,7 @@ h4 {
 }
 
 .information-options .option:hover {
-  background-color: #d8d8d8;
+  background-color: #f2f2f2;
 }
 
 .option img {
@@ -199,6 +200,54 @@ h4 {
 .option .info a {
   color: #3399ff;
 }
+
+/* courses */
+
+.courses .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses .title {
+  padding: 32px;
+  text-align: center;
+}
+
+.courses .coursesspecs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 56px;
+  margin-bottom: 32px;
+}
+
+.coursesspecs .course {
+  max-width: 272px;
+  margin: 16px;
+  background-color: white;
+  border-bottom: 1px solid white;
+}
+
+.coursesspecs .course:hover {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #3399ff;
+}
+
+.coursesspecs img {
+  max-width: 100%;
+  height: auto;
+}
+
+.coursesspecs .courseinfo {
+  padding: 16px;
+}
+
+.coursesspecs .extramargin {
+  margin: 10px 0;
+}
+
+/* Thesis */
+
 
 /* footer */
 footer {
